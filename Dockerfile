@@ -9,7 +9,7 @@ RUN pip install flask
 
 WORKDIR /app
 
-EXPOSE 5001
+EXPOSE 5000
 
 CMD ["python","app-fii.py"]
 

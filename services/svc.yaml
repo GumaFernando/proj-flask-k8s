@@ -4,11 +4,10 @@ metadata:
   name: fii-sv
   namespace: ns-fii
 spec:
-  loadBalancerIP: 20.121.107.196
   type: LoadBalancer
   ports:
-  - port: 5001
-    nodePort: 30080
+  - port: 5000
+    #nodePort: 30080
   selector:
     app: fii-app
     
