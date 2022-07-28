@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: fii-cont
-        image: gumacr.azurecr.io/fii-flask:v9
+        image: gumacr.azurecr.io/fii-flask:v10
         ports:
           - containerPort: 5001
       imagePullSecrets:

@@ -4,7 +4,7 @@ metadata:
   name: fii-sv
   namespace: ns-fii
 spec:
-  loadBalancerIP: 52.226.240.15
+  loadBalancerIP: 20.121.107.196
   type: LoadBalancer
   ports:
   - port: 5001
