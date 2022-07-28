@@ -1,8 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: fii
   name: fii
   namespace: ns-fii
 spec:
@@ -27,6 +25,3 @@ spec:
             memory: 256Mi
         ports:
         - containerPort: 5002
-      imagePullSecrets:
-      - name: regcred
-
