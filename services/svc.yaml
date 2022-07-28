@@ -6,7 +6,7 @@ metadata:
   name: fii-sv
   namespace: ns-fii
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: fii-app
   ports:
