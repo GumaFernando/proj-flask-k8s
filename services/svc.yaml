@@ -7,7 +7,7 @@ spec:
   type: LoadBalancer
   ports:
   - port: 5001
-    nodePort: 5001
+    nodePort: 30080
   selector:
     app: fii-app
     
