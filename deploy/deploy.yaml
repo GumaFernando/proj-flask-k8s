@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: fii
+  name: fii
+  namespace: ns-fii
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fii-app
+  template:
+    metadata:
+      labels:
+        app: fii-app
+    spec:
+      containers:
+      - name: fii-cont
+        image: gumacr.azurecr.io/fii_fundsexplorer:v7
+      imagePullSecrets:
+      - name: regcred
+
