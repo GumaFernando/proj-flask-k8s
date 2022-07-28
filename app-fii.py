@@ -14,4 +14,4 @@ def bemvindo():
 
        
 if __name__  == "__main__":
-    app.run(host="52.226.240.15", debug=True, port=5001)  
+    app.run(host="20.121.107.196", debug=True, port=5001)  
