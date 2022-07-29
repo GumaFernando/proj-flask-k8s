@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-flask
+  namespace: ns-fii
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: flask
+  rules:
+  - http:
+      paths:
+      - path: /?(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: fii-sv
+            port:
+              number: 6379
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: fii-sv
+            port:
+              number: 6379
