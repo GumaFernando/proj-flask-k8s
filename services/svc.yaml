@@ -5,6 +5,7 @@ metadata:
   namespace: ns-fii
 spec:
   type: LoadBalancer
+  loadBalancerIP: 20.121.107.196
   ports:
   - port: 5001
     #nodePort: 30080
