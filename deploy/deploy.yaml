@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fii
+  name: flask
   namespace: ns-fii
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: fii-app
+      app: flask
   template:
     metadata:
       labels:
-        app: fii-app
+        app: flask
     spec:
       containers:
-      - name: fii-cont
-        image: gumacr.azurecr.io/fii-flask:v06
+      - name: flask
+        image: gumacr.azurecr.io/fii-flask:v07
         resources:
           requests:
             cpu: 100m
@@ -24,4 +24,4 @@ spec:
             cpu: 250m
             memory: 256Mi
         ports:
-        - containerPort: 6379
+        - containerPort: 5001

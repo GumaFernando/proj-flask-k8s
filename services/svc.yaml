@@ -1,15 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: fii-sv
+  name: flask
   namespace: ns-fii
 spec:
   type: LoadBalancer
   loadBalancerIP: 20.124.43.86
   ports:
-  - port: 6379 
-    targetPort: 6379
-    nodePort: 31000
+  - port: 5001 
+    targetPort: 5001
   selector:
-    app: fii-app
+    app: flask
     
