@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: fii-cont
-        image: gumacr.azurecr.io/fii-flask:v02
+        image: gumacr.azurecr.io/fii-flask:v03
         resources:
           requests:
             cpu: 100m
@@ -24,4 +24,4 @@ spec:
             cpu: 250m
             memory: 256Mi
         ports:
-        - containerPort: 80
+        - containerPort: 6379
