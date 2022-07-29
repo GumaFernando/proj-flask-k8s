@@ -7,7 +7,7 @@ spec:
   type: LoadBalancer
   loadBalancerIP: 20.124.43.86
   ports:
-  - port: 
+  - port: 6379 
     targetPort: 6379
     nodePort: 31000
   selector:
