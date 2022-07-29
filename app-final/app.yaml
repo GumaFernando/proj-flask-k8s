@@ -37,6 +37,7 @@ spec:
   loadBalancerIP: 20.124.43.86
   ports:
   - port: 5001
-  nodePort: 30030
+    nodePort: 30030
+    targetPort: 5001
   selector:
     app: flask
