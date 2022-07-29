@@ -7,7 +7,7 @@ spec:
   type: LoadBalancer
   loadBalancerIP: 20.124.43.86
   ports:
-  - port: 63
+  - port: 5001
     #nodePort: 30080
   selector:
     app: fii-app
