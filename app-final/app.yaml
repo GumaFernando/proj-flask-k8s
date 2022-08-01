@@ -16,6 +16,7 @@ spec:
       containers:
       - name: flask
         image: gumacr.azurecr.io/fii-flask:v08
+        imagePullPolicy: Always
         resources:
           requests:
             cpu: 100m
