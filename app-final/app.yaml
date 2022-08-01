@@ -42,21 +42,3 @@ spec:
     targetPort: 5001
   selector:
     app: flask
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: hello-world-ingress-static
-  namespace: ns-fii
-spec:
-  ingressClassName: flask
-  rules:
-  - http:
-      paths:
-      - path: /(.*)
-        pathType: Prefix
-        backend:
-          service:
-            name: flask
-            port: 
-              number: 5001
