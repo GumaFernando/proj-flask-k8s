@@ -91,7 +91,7 @@ CMD ["python","app-fii.py"]
 
 - Verificando o Cluster Kubernetes criado para o deploy da aplicação
 
-![alt text]()
+![alt text](https://github.com/GumaFernando/proj-flask-k8s/blob/master/evidencias/cluster%20k8s.PNG)
 
 
 - Criando o script para a criação do namespace no kubernetes 
